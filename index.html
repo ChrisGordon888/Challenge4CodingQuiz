@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Coding Quiz</h1>
+      <a href="#" id="view-highscores">View Highscores</a>
+      <div id="timer">33</div>
+    </header>
+    <main>
+      
+      <div id="quiz"> 
+        <div id="InitHeader">
+          <h2>Welcome to the Coding Quiz!</h2>
+          <p>Press the button below to start the quiz.</p>
+          <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="hidden">
+          <h3 id="question-title"></h3>
+          <ul id="choices">
+            <li><button class="choice"></button></li>
+            <li><button class="choice"></button></li>
+            <li><button class="choice"></button></li>
+            <li><button class="choice"></button></li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+      <div id="highscores" class="hidden">
+        <h2>Highscores</h2>
+        <ol id="highscore-list"></ol>
+        <form>
+          <label for="initials">Enter your initials:</label>
+          <input type="text" id="initials" name="initials" maxlength="3" />
+          <button type="submit" id="submit-score">Submit</button>
+        </form>
+      </div>
+    </footer>
+    <script src="Assets/css/javascript/script.js"></script>
+  </body>
+</html>
