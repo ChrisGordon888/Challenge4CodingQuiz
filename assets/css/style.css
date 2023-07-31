@@ -3,7 +3,9 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif;
+  background: #030317;
+  color: #fff;
 }
 
 header {
@@ -11,17 +13,50 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #eee;
+  background-color: rgba(0,0,0,0.3);
 }
 
 #timer {
   font-size: 2em;
+  color: #ffc107;
+}
+
+a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #quiz {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+button {
+  background-color: #ffc107;
+  border: none;
+  color: #030317;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ffeb3b;
+  color: #030317;
 }
 
 .hidden {

@@ -12,24 +12,22 @@
       <div id="timer">33</div>
     </header>
     <main>
-      
       <div id="quiz"> 
         <div id="InitHeader">
           <h2>Welcome to the Coding Quiz!</h2>
           <p>Press the button below to start the quiz.</p>
-          <button id="start-btn">Start Quiz</button>
+          <button id="start-btn" class="button">Start Quiz</button>
         </div>
 
         <div id="questions" class="hidden">
           <h3 id="question-title"></h3>
           <ul id="choices">
-            <li><button class="choice"></button></li>
-            <li><button class="choice"></button></li>
-            <li><button class="choice"></button></li>
-            <li><button class="choice"></button></li>
+            <li><button class="choice button"></button></li>
+            <li><button class="choice button"></button></li>
+            <li><button class="choice button"></button></li>
+            <li><button class="choice button"></button></li>
           </ul>
         </div>
-
       </div>
     </main>
     <footer>
@@ -39,8 +37,10 @@
         <form>
           <label for="initials">Enter your initials:</label>
           <input type="text" id="initials" name="initials" maxlength="3" />
-          <button type="submit" id="submit-score">Submit</button>
+          <button type="submit" id="submit-score" class="button">Submit</button>
         </form>
+        <button id="go-back" class="hidden button">Go Back</button>
+        <button id="clear-highscores" class="hidden button">Clear Highscores</button>
       </div>
     </footer>
     <script src="assets/javascript/script.js"></script>
